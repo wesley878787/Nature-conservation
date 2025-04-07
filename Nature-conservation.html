@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Nature Conservation - Protecting Our Planet's Biodiversity">
+        <meta name="keywords" content="Nature, Conservation, Biodiversity, Environment, Wildlife, Ecosystems">
+        <meta name="author" content="Wesley M.">
+        <title>Nature Conservation</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background:linear-gradient(to bottom, rgba(0,0,0.5), rgba(0,0,245,0.5)), url("images/nature-2.jpg");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+        }
+        header h1{
+            font-size:2em;
+            text-decoration: none;
+            text-align: center;
+            padding: 20%;
+        }
+        header h2{
+            font-size:1.5em;
+            color: rgb(16, 70, 16);
+            text-align: center;
+            border: 2px solid white;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+            margin: auto 30%;
+            border-radius: 20px;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 30px;
+            position: fixed;
+            color: white;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+        .top-bar .logo {
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+        }
+        .top-bar .search-bar{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .top-bar .search-bar input{
+            padding: 10px 10px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+        .top-bar .search-bar button {
+            background-color: rgb(189, 123, 0);
+            border:none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .top-bar .account{
+            font-size: 1.5em;
+            color: white;
+            cursor: pointer;
+        }
+        .top-bar .account:hover{
+            color: red;
+            transition: 1s ease;
+        }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .intro{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 80%;
+            height: 80%;
+            background-color: rgba(80, 74, 74, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .intro-text{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 3s ease-in-out;
+            z-index: 0;
+            color: black;
+            font-size: 1.2em;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+        }
+        .intro-text.active{
+            opacity: 1;
+            z-index: 1;
+        }
+        .intro-text h2, .intro-text p, .intro-text ul {
+            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background */
+            padding: 10px 20px; /* Add padding around the text */
+            border-radius: 10px; /* Add rounded corners for better aesthetics */
+            display: inline-block; /* Ensure the background only wraps around the text */
+            color: white; /* Change text color to white for better contrast */
+            padding: 20px;
+            margin: 10px;
+        } 
+    </style>
+</html>
+<body>
+    <header>
+        <nav class="top-bar">
+            <div class="logo">
+                <i class="fa-solid fa-tree"></i><!-- Tree icon -->
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="account">
+                <a href="http://localhost/Nature_conservation/#"><i class="fa-solid fa-user"></i> <!-- Corrected Account icon --></a>
+            </div>
+        </nav>
+        <h1>Nature Conservation</h1>
+        <h2>Green is Good.</h2>
+    </header>
+    <main>
+        <section class="content">
+            <div class="intro">
+                <div class="intro-text active" style="background-image:url(images/nature-1.jpg); background-size: cover; background-position: center;">
+                    <h2>What is Nature Conservation?</h2>
+                    <p>Nature conservation is the practice of protecting and preserving the natural environment, including wildlife, ecosystems, and natural resources. It aims to maintain biodiversity and ensure that future generations can enjoy the beauty and benefits of nature.</p>
+                </div>
+                <div class="intro-text" style="background-image:url(images/nature-3.jpg); background-size: cover; background-position: center;">
+                    <h2>Key Principles of Nature Conservation</h2>
+                    <ul>
+                        <li>Preservation of Biodiversity</li>
+                        <li>Sustainable Use of Resources</li>
+                        <li>Restoration of Ecosystems</li>
+                        <li>Community Involvement and Education</li>
+                    </ul>
+                </div>
+                <div class="intro-text" style="background-image:url(images/nature-6.jpg); background-size: cover; background-position: center;">
+                    <h2>How Can You Help?</h2>
+                     <ul>
+                        <li>Reduce, Reuse, Recycle</li>
+                        <li>Support Conservation Organizations</li>
+                        <li>Volunteer for Local Conservation Projects</li>
+                        <li>Educate Others About Nature Conservation</li>
+                     </ul>
+                </div>
+            </div>
+
+            
+        </section>
+    </main>
+    <script>
+        //Intro text slider Functionality
+        const introTexts = document.querySelectorAll('.intro-text');
+        let currentIndex = 0;
+
+        //Function to show Current slide
+        function showSlide(index) {
+            introTexts.forEach((text, i) => {
+                text.classList.remove('active');
+                text.style.opacity = 0;
+                if (i === index) {
+                    text.classList.add('active');
+                    text.style.opacity = 1;
+                }
+            });
+        }
+
+        //Function to show next slide
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % introTexts.length;
+            showSlide(currentIndex);
+        }
+
+        //Start the slider
+        setInterval(showNextSlide, 15000); // Change slide every 3 seconds
+
+        //initialize the first slide
+        showSlide(currentIndex);
+    </script>
+</body>
+</html>
